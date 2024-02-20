@@ -2,6 +2,7 @@
 font-size:18px;
 height: 100%;
 width: 100vw;
+font-family:Arial, Helvetica, sans-serif;
 }
 *{
     padding: 0;
@@ -22,7 +23,7 @@ h2 img{
  width: 100px;
 }
 
-.display-none{
+.display-none,.body-img-1{
     display: none;
 }
 h3{
@@ -51,11 +52,9 @@ p{
 .main-1{
     display: block;
     padding: 5px 5px;
- 
+    margin: auto;
 }
-.body-img-1{
-    display: none;
-}
+
 .body-img{
     width: 80%;
     margin: auto;
@@ -74,17 +73,9 @@ h1{
   h3{
     font-size: 0px;
   }
-   
     h2 img{
         width: 100px;
        }
-nav ul a{
-    justify-content: space-between;
-    align-items: center;
-}
-h2 img{
-    width: 0 100px;
-   }
 }
 
 
@@ -131,7 +122,7 @@ h2 img{
         gap: 100px;
     }
     .body-img1{
-        display: inline;
+        display: flex;
     }
     h1{
         margin-bottom: 30px;
@@ -156,7 +147,18 @@ h2 img{
 
 @media screen and (min-width:1024px){
     .container{
-        padding:20px;
+        margin:10px 40px;
+    }
+    .main-1-text{
+        width: 500px;
+      padding: 20px;
+        font-size: 1rem;
+
+    }
+    .main-1-img{
+        width: 500px;
+        height: 400px;
+        margin: auto;
     }
     .main-1{
         margin-bottom: 10px;
@@ -164,12 +166,11 @@ h2 img{
     .display-none{
         display: flex;
     }
-    .main-1{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-   
+
+   h1{
+    font-size: 50px;
+    
+   }
    
     h3{
         display: none;
@@ -186,6 +187,5 @@ h2 img{
         padding: 3px;
 
     }
-
 
 }
